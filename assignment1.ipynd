@@ -1,0 +1,254 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Assignment 1: Python Programming Fundamentals\n",
+    "\n",
+    "**Course**: OpenEdX Demo Course  \n",
+    "**Due Date**: [Add your due date]  \n",
+    "**Points**: 100\n",
+    "\n",
+    "## Instructions\n",
+    "- Complete all code cells below\n",
+    "- Run each cell to test your solution\n",
+    "- Make sure all tests pass before submission\n",
+    "- Save your notebook when finished\n",
+    "\n",
+    "---"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Question 1: Basic Function (20 points)\n",
+    "\n",
+    "Write a function called `calculate_area` that calculates the area of a rectangle.\n",
+    "\n",
+    "**Requirements:**\n",
+    "- Function name: `calculate_area`\n",
+    "- Parameters: `length` and `width`\n",
+    "- Return: area (length × width)\n",
+    "- Handle edge cases (negative numbers should return 0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def calculate_area(length, width):\n",
+    "    \"\"\"\n",
+    "    Calculate the area of a rectangle.\n",
+    "    \n",
+    "    Args:\n",
+    "        length (float): Length of the rectangle\n",
+    "        width (float): Width of the rectangle\n",
+    "    \n",
+    "    Returns:\n",
+    "        float: Area of the rectangle\n",
+    "    \"\"\"\n",
+    "    # TODO: Write your code here\n",
+    "    pass\n",
+    "\n",
+    "# Test your function\n",
+    "print(f\"Area of 5x3 rectangle: {calculate_area(5, 3)}\")  # Should output: 15\n",
+    "print(f\"Area of 10x2 rectangle: {calculate_area(10, 2)}\")  # Should output: 20\n",
+    "print(f\"Area with negative input: {calculate_area(-5, 3)}\")  # Should output: 0"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Question 2: List Operations (25 points)\n",
+    "\n",
+    "Create a function that processes a list of numbers.\n",
+    "\n",
+    "**Requirements:**\n",
+    "- Function name: `process_numbers`\n",
+    "- Parameter: `numbers` (list of integers)\n",
+    "- Return: dictionary with 'sum', 'average', 'max', 'min'\n",
+    "- Handle empty list (return all values as 0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def process_numbers(numbers):\n",
+    "    \"\"\"\n",
+    "    Process a list of numbers and return statistics.\n",
+    "    \n",
+    "    Args:\n",
+    "        numbers (list): List of numbers\n",
+    "    \n",
+    "    Returns:\n",
+    "        dict: Dictionary with sum, average, max, min\n",
+    "    \"\"\"\n",
+    "    # TODO: Write your code here\n",
+    "    pass\n",
+    "\n",
+    "# Test your function\n",
+    "test_numbers = [1, 2, 3, 4, 5]\n",
+    "result = process_numbers(test_numbers)\n",
+    "print(f\"Results: {result}\")\n",
+    "# Should output: {'sum': 15, 'average': 3.0, 'max': 5, 'min': 1}\n",
+    "\n",
+    "# Test with empty list\n",
+    "empty_result = process_numbers([])\n",
+    "print(f\"Empty list result: {empty_result}\")\n",
+    "# Should output: {'sum': 0, 'average': 0, 'max': 0, 'min': 0}"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Question 3: Data Analysis (30 points)\n",
+    "\n",
+    "Work with the provided student grades data.\n",
+    "\n",
+    "**Requirements:**\n",
+    "- Calculate class average\n",
+    "- Find students above average\n",
+    "- Count students by grade category (A, B, C, D, F)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Sample student data\n",
+    "student_grades = {\n",
+    "    'Alice': 92,\n",
+    "    'Bob': 78,\n",
+    "    'Charlie': 85,\n",
+    "    'Diana': 96,\n",
+    "    'Eve': 73,\n",
+    "    'Frank': 88,\n",
+    "    'Grace': 91,\n",
+    "    'Henry': 67,\n",
+    "    'Ivy': 94,\n",
+    "    'Jack': 82\n",
+    "}\n",
+    "\n",
+    "# TODO: Calculate the class average\n",
+    "class_average = 0  # Replace with your calculation\n",
+    "\n",
+    "print(f\"Class average: {class_average:.2f}\")\n",
+    "\n",
+    "# TODO: Find students with grades above average\n",
+    "above_average_students = []  # Replace with your code\n",
+    "\n",
+    "print(f\"Students above average: {above_average_students}\")\n",
+    "\n",
+    "# TODO: Count students by grade category\n",
+    "# A: 90-100, B: 80-89, C: 70-79, D: 60-69, F: below 60\n",
+    "grade_categories = {'A': 0, 'B': 0, 'C': 0, 'D': 0, 'F': 0}\n",
+    "\n",
+    "# Write your code here to count students in each category\n",
+    "\n",
+    "print(f\"Grade distribution: {grade_categories}\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Question 4: Problem Solving (25 points)\n",
+    "\n",
+    "Write a program that finds the second largest number in a list.\n",
+    "\n",
+    "**Requirements:**\n",
+    "- Function name: `find_second_largest`\n",
+    "- Parameter: `numbers` (list of integers)\n",
+    "- Return: second largest number\n",
+    "- Handle edge cases (less than 2 unique numbers)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def find_second_largest(numbers):\n",
+    "    \"\"\"\n",
+    "    Find the second largest number in a list.\n",
+    "    \n",
+    "    Args:\n",
+    "        numbers (list): List of numbers\n",
+    "    \n",
+    "    Returns:\n",
+    "        int/float: Second largest number, or None if not possible\n",
+    "    \"\"\"\n",
+    "    # TODO: Write your code here\n",
+    "    pass\n",
+    "\n",
+    "# Test your function\n",
+    "test_cases = [\n",
+    "    [1, 2, 3, 4, 5],        # Should return 4\n",
+    "    [10, 10, 9, 8],         # Should return 9\n",
+    "    [5],                    # Should return None\n",
+    "    [3, 3, 3],              # Should return None\n",
+    "    [100, 50, 75, 25]       # Should return 75\n",
+    "]\n",
+    "\n",
+    "for i, test in enumerate(test_cases, 1):\n",
+    "    result = find_second_largest(test)\n",
+    "    print(f\"Test {i}: {test} → Second largest: {result}\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Submission\n",
+    "\n",
+    "**Before submitting:**\n",
+    "1. ✅ Run all cells and ensure they execute without errors\n",
+    "2. ✅ Check that all test cases pass\n",
+    "3. ✅ Save your notebook (Ctrl+S)\n",
+    "4. ✅ Verify your solutions are complete\n",
+    "\n",
+    "**To submit:**\n",
+    "- Save this notebook\n",
+    "- Download it as .ipynb file\n",
+    "- Upload to the course submission system\n",
+    "\n",
+    "---\n",
+    "\n",
+    "**Good luck! 🚀**"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
